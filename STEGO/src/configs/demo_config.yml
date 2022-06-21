@@ -1,0 +1,15 @@
+output_root: '../'
+model_path: "../saved_models/potsdam_test.ckpt"
+image_dir: "../samples"
+experiment_name: "demo_potsdam"
+res: 320
+batch_size: 8
+num_workers: 24
+use_ddp: False
+
+hydra:
+  run:
+    dir: "."
+  output_subdir: ~
+  #job_logging: "disabled"
+  #hydra_logging: "disabled"

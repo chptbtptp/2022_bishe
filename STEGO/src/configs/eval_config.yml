@@ -1,0 +1,24 @@
+output_root: '../'
+# modify
+# pytorch_data_dir: '/datadrive/pytorch-data/'
+# experiment_name: "cocostuff"
+pytorch_data_dir: '/user-data/STEGO/data/'
+experiment_name: "vein_cut40_nocut_2"
+
+res: 320
+# modify
+batch_size: 16
+
+num_workers: 24
+run_picie: True
+run_crf: True
+run_prediction: True
+dark_mode: True
+use_ddp: False
+
+hydra:
+  run:
+    dir: "."
+  output_subdir: ~
+  #job_logging: "disabled"
+  #hydra_logging: "disabled"
